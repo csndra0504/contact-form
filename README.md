@@ -1,11 +1,37 @@
 # Contact Form with Nodemailer
 
+## Local Development
+
+Clone the repo.
+
+Install dependencies:
+```
+yarn
+```
+OR
+```
+npm install
+```
+
+Add a .env file with the following info:
+```
+EMAIL_USERNAME="youremail@gmail.com"
+EMAIL_PASSWORD="YoUrPa$$w0Rd"
+```
+Run it.
+```
+npm start
+```
+Try it.<br>
+Go to `http://localhost:3000/` in your favorite browser.
+
 ## Uses
 
 #### UI
 
 - HTML
 - CSS
+- jQuery
 
 #### Server
 
@@ -14,6 +40,7 @@
 - Nodemailer
 - ES6 & Babel
 - Nodemon
+- dotenv
 
 ## Concepts
 
