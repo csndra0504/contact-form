@@ -1,0 +1,47 @@
+<html>
+<head>
+    <Title>Contact Form</Title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+
+<header class="page-header gradient-section">
+    <div class="container">
+        <h1 class="text-center">Get in Touch!</h1>
+        <p class="lead text-center">Hey there! Have questions about JavaScript or Web Development? Want to hire me to build something awesome for
+            you? Feel free to send me an email with the form below. :)</p>
+    </div>
+</header>
+
+<section class="container">
+    <div class="section">
+        <h1 class="text-center">I'd love to hear from you.</h1>
+        <form id="emailForm">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your full name"/>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Your email address"/>
+            <label for="message">Message</label>
+            <textarea id="message" cols="40" rows="5" placeholder="What's on your mind?"></textarea>
+            <input type="button" id="send_email" value="Send Email" />
+        </form>
+        <span id="response"></span>
+    </div>
+</section>
+
+<footer class="gradient-section">
+    <div class="social text-center">
+        <a class="social-icons" target="_blank" href="https://github.com/csndra0504"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="social-icons" target="_blank" href="https://twitter.com/CassandraWilcox"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="social-icons" target="_blank" href="https://www.linkedin.com/in/casswilcox/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    </div>
+    <div class="copyright text-center">&copy; Cassandra Wilcox 2017. Designed & coded with <i class="fa fa-heart" aria-hidden="true"></i>.</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="contact-form.js"></script>
+</body>
+</html>
