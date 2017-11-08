@@ -1,0 +1,10 @@
+link(rel="stylesheet", href="../public/emails.css", data-inline)
+.wrapper
+    .container
+        h1 You have a new message from #{name}.
+
+        p Their email is <a href="mailto:#{email}">#{email}</a>
+        p Here's what they have to say: <br/> #{message}
+        hr
+        p Massage sent via the contact form at <a href="cassandra@cassandrawilcox.me">cassandra@cassandrawilcox.me</a>
+

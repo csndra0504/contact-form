@@ -8,7 +8,7 @@
 html{
     font-size: 10px;
 }
-body{
+body, p{
     color: #9B9B9B;
     font-size: 1.6rem;
     font-family: "Open Sans", SansSerif;

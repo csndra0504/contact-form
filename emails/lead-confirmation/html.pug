@@ -1,0 +1,14 @@
+link(rel="stylesheet", href="../public/emails.css", data-inline)
+.wrapper
+    .container
+        h1 Hey there #{name},
+        p.lead Thank you so much for emailing me. I will be in touch with you shortly!
+        p For your records, a copy of the message I received from you is below:
+        hr
+        p Your name: <br/> #{name}
+        p Your email: <br/> <a href="mailto:#{email}">#{email}</a>
+        p Your message: <br/> #{message}
+        hr
+        p Kind regards,
+        p Cassandra Wilcox <br/> <a href="cassandra@cassandrawilcox.me">cassandra@cassandrawilcox.me</a>
+
