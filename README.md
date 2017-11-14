@@ -25,6 +25,8 @@ npm start
 Try it.<br>
 Go to `http://localhost:3000/` in your favorite browser.
 
+*Note: in order to send email via your Gmail account you need to turn on "Allow less secure apps" here: https://myaccount.google.com/lesssecureapps*
+
 ## Uses
 
 #### UI
