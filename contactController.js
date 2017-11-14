@@ -37,20 +37,26 @@ exports.sendEmails = (req, res) => {
     to: 'cassandra@cassandrawilcox.me'
   };
 
-  email.send({
+  const confirmationPromise = email.send({
     template: 'lead-confirmation',
     message: leadMailOptions,
     locals: context
-  })
-       .then(res.end("sent"))
-       .catch(res.end("error"));
+  });
 
-  email.send({
+  const newContactPromise = email.send({
     template: 'new-contact',
     message: selfMailOptions,
     locals: context
-  })
-       .then(res.end("sent"))
-       .catch(res.end("error"));
+  });
+
+  Promise.all([confirmationPromise, newContactPromise])
+         .then(
+           function (values) {
+             console.log('sent', values);
+           })
+         .catch(function (err) {
+             console.log(err);
+           });
+
 };
 
