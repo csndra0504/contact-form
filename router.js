@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-import contactController from './contactController';
+const contactController = require('./contactController');
 
 router.get('/', contactController.getContactpage);
 

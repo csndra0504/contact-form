@@ -5,8 +5,8 @@ if (process.env.NODE_ENV === 'development') {
   require('dotenv')
     .config();
 }
-import express from 'express';
-import routes from './router';
+const express = require('express');
+const routes = require('./router');
 const app = express();
 
 app.use(express.static('public'));

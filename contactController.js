@@ -1,5 +1,5 @@
-import nodemailer from 'nodemailer';
-import Email from 'email-templates';
+const nodemailer = require('nodemailer');
+const Email = require('email-templates');
 
 const smtpTransport = nodemailer.createTransport({
   service: "gmail",
