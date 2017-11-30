@@ -11,6 +11,13 @@ const app = express();
 
 app.use(express.static('public'));
 
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
+  next();
+});
+
 app.use('/', routes);
 
 app.listen(process.env.PORT || 3000, () => {
