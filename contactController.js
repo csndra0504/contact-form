@@ -52,10 +52,11 @@ exports.sendEmails = (req, res) => {
   Promise.all([confirmationPromise, newContactPromise])
          .then(
            function (values) {
-             console.log('sent', values);
+             res.json({msg: "Success!", data: values});
            })
          .catch(function (err) {
              console.log(err);
+           res.json({msg: "Error!", error: err});
            });
 
 };
