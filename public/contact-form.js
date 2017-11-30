@@ -21,8 +21,8 @@ $(document).ready(function () {
       if (!d.error) {
         console.log('success!');
         swal(
-          'Good job!',
-          'You clicked the button!',
+          'Thanks for emailing me!',
+          "I've sent a confirmation to your email address. :)",
           'success'
         );
         nameField.val('');
